@@ -1,0 +1,67 @@
+[project]
+name = "flames"
+version = "0.1.0"
+description = "A fractal flame generator"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    {name = "Nathan Smithies", email = "nathensmithies@gmail.com>"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=2.4.0",
+    "pillow>=12.1.0",
+    "pygame>=2.6.1",
+    "pyopengl>=3.1.10",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.10",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+indent-width = 4
+exclude = [
+    "examples/"
+]
+
+[tool.ruff.lint]
+select = [
+    'COM',
+    "E",
+    "F",
+    "I",
+    "ISC",
+    "N",
+    "Q",
+    "RUF",
+    "TID",
+    "W",
+]
+ignore = [
+    "COM812",
+]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+
+[tool.ruff.format]
+quote-style = "single"
+
+
+[project.scripts]
+editor = "flames.editor:main"
+animation = "flames.animation:main"
+render = "flames.render:main"
+interpolate = "flames.interpolate:main"
+
+[build-system]
+requires = ["uv_build>=0.8.19,<0.9.0"]
+build-backend = "uv_build"

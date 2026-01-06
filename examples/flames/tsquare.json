@@ -1,0 +1,175 @@
+{
+   "pos": [
+      0,
+      0
+   ],
+   "radius": 1,
+   "gamma": 2,
+   "hits_per_tick": 200,
+   "functions": [
+      {
+         "name": "Point 1",
+         "prob": [
+            0.334,
+            0.333,
+            0,
+            0.333
+         ],
+         "colour": [
+            1.0,
+            0.0,
+            0.0,
+            0.5
+         ],
+         "pre_trans": [
+            0.5,
+            0.0,
+            0.0,
+            0.5,
+            -0.5,
+            -0.5
+         ],
+         "post_trans": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+         ],
+         "variations": [
+            {
+               "name": "Linear",
+               "base": "RETURN(coord * weight)",
+               "params": {
+                  "weight": 1.0
+               },
+               "images": {}
+            }
+         ]
+      },
+      {
+         "name": "Point 2",
+         "prob": [
+            0.333,
+            0.334,
+            0.333,
+            0
+         ],
+         "colour": [
+            0.0,
+            1.0,
+            0.0,
+            0.5
+         ],
+         "pre_trans": [
+            0.5,
+            0.0,
+            0.0,
+            0.5,
+            0.5,
+            -0.5
+         ],
+         "post_trans": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+         ],
+         "variations": [
+            {
+               "name": "Linear",
+               "base": "RETURN(coord * weight)",
+               "params": {
+                  "weight": 1.0
+               },
+               "images": {}
+            }
+         ]
+      },
+      {
+         "name": "Point 3",
+         "prob": [
+            0,
+            0.333,
+            0.334,
+            0.333
+         ],
+         "colour": [
+            0.0,
+            0.0,
+            1,
+            0.5
+         ],
+         "pre_trans": [
+            0.5,
+            0.0,
+            0.0,
+            0.5,
+            0.5,
+            0.5
+         ],
+         "post_trans": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+         ],
+         "variations": [
+            {
+               "name": "Linear",
+               "base": "RETURN(coord * weight)",
+               "params": {
+                  "weight": 1.0
+               },
+               "images": {}
+            }
+         ]
+      },
+      {
+         "name": "Point 4",
+         "prob": [
+            0.333,
+            0,
+            0.333,
+            0.334
+         ],
+         "colour": [
+            1,
+            1,
+            1,
+            0.5
+         ],
+         "pre_trans": [
+            0.5,
+            0.0,
+            0.0,
+            0.5,
+            -0.5,
+            0.5
+         ],
+         "post_trans": [
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+         ],
+         "variations": [
+            {
+               "name": "Linear",
+               "base": "RETURN(coord * weight)",
+               "params": {
+                  "weight": 1.0
+               },
+               "images": {}
+            }
+         ]
+      }
+   ]
+}
